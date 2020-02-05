@@ -81,7 +81,7 @@ class App extends Component {
       <div className="App">
           <div>
             <h1>API Project: URL Shortener Microservice</h1>
-            <h2>Add your desired url: </h2>
+            <h2>Add your desired url (www.yoururl.com): </h2>
             <form onSubmit={this.onSubmitUrl}>
               <input 
               type="text" 
