@@ -1,15 +1,10 @@
 const router = require('express').Router();
 const express = require('express')
-var bodyParser = require('body-parser');
-var app = express();
 const urlRegex = require('url-regex');
 const Url = require('../models/urlModels');
-const cors = require('cors')
 
 //var regex = new RegExp("^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?");
 //var regex = new RegExp("(http|ftp|https)://[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:/~+#-]*[\w@?^=%&amp;/~+#-])?")
-app.use(bodyParser.urlencoded({extended: 'false'}));
-app.use(bodyParser.json());
 
 
 // router.get('/', (req,res) => {
