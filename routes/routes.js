@@ -42,7 +42,7 @@ router.post('/api/shorturl/new', (req, res) => {
 });
 
 
-router.get('/api/shorturl/:shortid', cors(), function(req, res) {
+router.get('/api/shorturl/:shortid', function(req, res) {
     var short = req.params.shortid;
     //var shortUrl = short.toString()
     //var baseUrl = `http://localhost:3000/api/shorturl/new/${short}`
